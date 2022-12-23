@@ -117,6 +117,6 @@ class ProductController extends Controller
         Session::forget('cart');
         Session::forget('customer');
 
-        return view('shop.checkout-success', ['products' => $products, 'customer' => $customer]);
+        return view('shop.checkout-success', ['products' => $products, 'customer' => $customer])->with('success', 'Please pay at the cashier 😊');
     }
 }

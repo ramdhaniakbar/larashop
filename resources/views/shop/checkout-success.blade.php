@@ -23,6 +23,15 @@
 <body class="overflow-hidden">
    <div class="container">
       <div class="row d-flex justify-content-center mt-5">
+         @if (Session::has('success'))
+         <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-lg-4">
+               <div class="alert alert-success" role="alert">
+                  {{ Session::get('success') }}
+               </div>
+            </div>
+         </div>
+         @endif
          <div class="col-sm-6 col-md-4 col-md-offset-3 col-sm-offset-3">
             <h2>Detail Order</h2>
             <div class="row mt-3">

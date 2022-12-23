@@ -63,8 +63,8 @@
                <div class="card mb-4">
                   <ul class="list-group list-group-flush py-3">
                      <li class="list-group-item">
-                        <strong>Total Qty:</strong>
-                        <span class="float-end">${{ $products->totalQty }}</span>
+                        <strong>Total Product:</strong>
+                        <span class="float-end">{{ $products->totalQty }}</span>
                      </li>
                   </ul>
                   <ul class="list-group list-group-flush py-3">
